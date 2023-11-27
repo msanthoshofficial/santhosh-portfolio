@@ -1,4 +1,5 @@
 import "./App.css";
+import { Suspense } from "react";
 
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
@@ -10,7 +11,9 @@ function App() {
 		<div className="bg-base-200">
 			<Header />
 			<Hero />
-			<Showcase />
+			<Suspense>
+				<Showcase />
+			</Suspense>
 			<Footer />
 		</div>
 	);
