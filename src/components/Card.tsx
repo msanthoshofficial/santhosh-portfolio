@@ -17,8 +17,8 @@ export const Card = ({
 }: Props) => {
 	return (
 		<div className="flex flex-col md:flex-row justify-between gap-8">
-			<div className="mockup-browser w-full md:w-1/2 border bg-base-300">
-				<div className="mockup-browser-toolbar">
+			<div className="mockup-browser w-full md:w-1/2 border bg-base-300 shadow-2xl">
+				<div className="mockup-browser-toolbar ">
 					<div className="input hover:text-accent cursor-pointer">
 						{Site_URL.href}
 					</div>

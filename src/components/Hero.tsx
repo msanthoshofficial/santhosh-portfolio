@@ -2,7 +2,7 @@ import image from "../assets/pic.png";
 export const Hero = () => {
 	return (
 		<section>
-			<div className="hero min-h-screen bg-base-200">
+			<div className="hero bg-base-200">
 				<div className="hero-content flex-col lg:flex-row-reverse">
 					<img src={image} className="max-w-sm rounded-lg" />
 					<div>
