@@ -1,4 +1,5 @@
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 import { Suspense } from "react";
 
 import { Header } from "./components/Header";
@@ -8,14 +9,17 @@ import { Footer } from "./components/Footer";
 
 function App() {
 	return (
-		<div className="bg-base-200">
-			<Header />
-			<Hero />
-			<Suspense>
-				<Showcase />
-			</Suspense>
-			<Footer />
-		</div>
+		<>
+			<Analytics mode={"production"} />
+			<div className="bg-base-200">
+				<Header />
+				<Hero />
+				<Suspense>
+					<Showcase />
+				</Suspense>
+				<Footer />
+			</div>
+		</>
 	);
 }
 
